@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.VisiteController"
+            styleClass="content-pane">
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Gestion des visites" styleClass="title-label"/>
+            <TextField fx:id="tfRecherche" promptText="Rechercher une visite..." />
+            <TableView fx:id="tableVisite" prefHeight="400" prefWidth="900" styleClass="table-view">
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+                <columns>
+                    <TableColumn fx:id="colDate" text="Date" />
+                    <TableColumn fx:id="colDescription" text="Description" />
+                    <TableColumn fx:id="colAnimal" text="Animal" />
+                    <TableColumn fx:id="colVeterinaire" text="Vétérinaire" />
+
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <bottom>
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+
+            <HBox spacing="10" alignment="CENTER">
+                <DatePicker fx:id="dpDate" promptText="Date de visite"/>
+                <ComboBox fx:id="cbAnimal" promptText="Animal"/>
+                <ComboBox fx:id="cbVeterinaire" promptText="Vétérinaire"/>
+
+            </HBox>
+            <TextArea fx:id="taDescription" promptText="Description" prefRowCount="3"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Ajouter" onAction="#ajouter" styleClass="primary-button"/>
+                <Button text="Modifier" onAction="#modifier" styleClass="warning-button"/>
+                <Button text="Supprimer" onAction="#supprimer" styleClass="danger-button"/>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>

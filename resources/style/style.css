@@ -1,0 +1,116 @@
+/* Navbar (HBox) */
+.navbar {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 10;
+}
+
+/* Boutons de la navbar */
+.navbar Button {
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+
+
+/* Effet de survol */
+.navbar Button:hover {
+    -fx-background-color: #eddfc5;
+}
+
+.content-pane {
+    -fx-padding: 30;
+    -fx-background-color: #ecf0f1;
+    -fx-alignment: center;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+Button {
+    -fx-background-radius: 8;
+    -fx-padding: 8 16;
+}
+
+/* Bouton Ajouter */
+.primary-button {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.primary-button:hover {
+    -fx-background-color: #2ecc71;
+}
+
+/* Bouton Modifier (jaune) */
+.warning-button {
+    -fx-background-color: #f1c40f;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.warning-button:hover {
+    -fx-background-color: #f39c12;
+}
+
+/* Bouton Supprimer (rouge) */
+.danger-button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.danger-button:hover {
+    -fx-background-color: #c0392b;
+}
+.background {
+    -fx-background-color: #ecf0f1; /* Couleur de l'accueil */
+    -fx-padding: 30;
+    -fx-alignment: center;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+.table-view .column-header {
+    -fx-background-color: #2c3e50; /* même couleur que navbar */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+.table-view .table-cell {
+    -fx-alignment: CENTER;
+    -fx-padding: 8 4;
+    -fx-font-size: 13px;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Lignes alternées */
+.table-row-cell:odd {
+    -fx-background-color: #f2f6f7;
+}
+.table-row-cell:even {
+    -fx-background-color: #ffffff;
+}
+
+/* Ligne sélectionnée */
+.table-row-cell:selected {
+    -fx-background-color: #dff0d8;
+    -fx-text-fill: black;
+}
+
+/* Pour que les colonnes aient le même style */
+.table-column {
+    -fx-alignment: CENTER;
+}

@@ -1,0 +1,27 @@
+# === IntelliJ IDEA ===
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# === Java compiled files ===
+*.class
+
+# === Build output ===
+out/
+target/
+bin/
+
+# === Logs ===
+*.log
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Environment ===
+.env
+
+# === JavaFX specific ===
+*.jar
+*.war

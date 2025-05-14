@@ -1,0 +1,26 @@
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.AccueilController"
+            prefWidth="1400" prefHeight="1000"
+            style="-fx-background-color: linear-gradient(to bottom right, #eddfc5, #eddfc5);">
+
+    <VBox alignment="BASELINE_CENTER" spacing="20" AnchorPane.topAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <Label text="Bienvenue sur VetCare 360 !" style="-fx-font-size: 28px; -fx-text-fill: #2c3e50;"/>
+        <Label text="Gérez facilement vos vétérinaires, animaux et visites." style="-fx-font-size: 16px; -fx-text-fill: #34495e;"/>
+
+        <HBox alignment="CENTER" spacing="30">
+            <ImageView fitHeight="300" fitWidth="300">
+                <image>
+                    <Image url="@/images/dog.png" />
+                </image>
+            </ImageView>
+        </HBox>
+    </VBox>
+</AnchorPane>
